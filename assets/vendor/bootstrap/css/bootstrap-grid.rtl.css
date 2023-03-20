@@ -2706,7 +2706,7 @@
   }
   .ps-md-5 {
     padding-right: 3rem !important;
-  }
+  }flex-lg-row
 }
 @media (min-width: 992px) {
   .d-lg-inline {

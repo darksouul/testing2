@@ -568,7 +568,7 @@
   }
   .col-md-6 {
     flex: 0 0 auto;
-    width: 50%;
+    /* width: 50%; */
   }
   .col-md-7 {
     flex: 0 0 auto;
@@ -2708,6 +2708,19 @@
     padding-left: 3rem !important;
   }
 }
+/* @media (min-width: 1286px) {
+
+  .flex-lg-row {
+    flex-direction: row !important;
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1286px){
+   .flex-lg-column {
+    flex-direction: column !important;
+  }
+
+} */
 @media (min-width: 992px) {
   .d-lg-inline {
     display: inline !important;
