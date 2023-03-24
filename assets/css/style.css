@@ -512,14 +512,84 @@ section {
 --------------------------------------------------------------*/
 .testimonial-section {
   background-color: white;
-  padding: 80px 0;
-  height: 70vh;
+  /* padding: 40px 0; */
+  /* height: 70vh; */
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 10px;
   margin-bottom: 50px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+}
+@media (max-width: 760px) {
+  .para{
+    margin-left: 48px;
+    margin-right: 48px;
+    text-align: left;
+  }
+  
+}
+@media (min-width: 761px) {
+  .para{
+    margin-left: 90px;
+    margin-right: 90px;
+    text-align: left;
+  }
+  
+}
+@media (min-width: 1000px) {
+  .para{
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: left;
+  }
+  
+}
+@media (min-width: 320px) and (max-width: 1000px){
+  .testimonial-section {
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    /* height: 70vh; */
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1000px) {
+  .testimonial-section{
+    background-color: white;
+    /* padding-top: 40px; */
+    padding-bottom: 0px;
+    /* height: 70vh; */
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+  
+}
+
+@media (min-width: 1286px) {
+  .testimonial-section {
+    background-color: white;
+    /* padding-top: 40px; */
+    padding-bottom: 0px;
+    /* height: 70vh; */
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    max-width: 1040px;
+    margin: auto;
+  }
 }
 
 .testi-img .img-box {
@@ -611,6 +681,50 @@ section {
   }
 }
 
+@media(min-width:760px) {
+  .testi-img .img-box {
+    max-width: 300px;
+    margin-top: 13px;
+  }
+
+  .style_helper1 {
+    font-size: 4em;
+    position: relative;
+    top: -4.5px;
+  }
+
+  .style_helper2 {
+    font-size: 4em;
+    float: right;
+  }
+
+  .testi-img .img-box-inner img {
+    max-width: 230px;
+  }
+}
+@media(min-width:100px) {
+  .testi-img .img-box {
+    max-width: 300px;
+    margin-top: 13px;
+  }
+
+  .style_helper1 {
+    font-size: 4em;
+    position: relative;
+    top: 25px;
+  }
+
+  .style_helper2 {
+    font-size: 4em;
+    float: right;
+  }
+
+  .testi-img .img-box-inner img {
+    max-width: 230px;
+  }
+}
+
+
 @media(max-width:767px) {
   .testi-img {
     margin-bottom: 25px;
@@ -687,20 +801,62 @@ section {
 
 #footer .footer-top h4 {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   color: #FE61A6;
   position: relative;
   padding-bottom: 12px;
-
+  line-height: 24px;
 }
 
 #footer .footer-top .special {
   font-size: 16px;
-  font-weight: bold;
+
   color: #FE61A6;
   position: relative;
   padding-bottom: 12px;
   text-align: right;
+}
+@media (min-width:996px){
+.desktop-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+.desktop-heading{
+  margin-right: 20px;
+}
+.desktop-special{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+}
+@media (min-width: 768px) and (max-width: 996px){
+  .middle-row{
+    width: 35%;
+  }
+  .middle-links{
+    width: 35%;
+  }
+  .middle-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .middle-footer{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .desktop-heading{
+    margin-right: 20px;
+  }
+  .desktop-special{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 #footer .footer-top .footer-links {
@@ -732,15 +888,12 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
+  font-size: 16px;
+  font-weight: 500;
   color: #777777;
   transition: 0.3s;
   display: inline-block;
-  line-height: 1.5;
-}
-
-#footer .footer-top .footer-links ul a:hover {
-  text-decoration: none;
-  color: black;
+  line-height: 24px;
 }
 
 .mt-3 {
@@ -806,7 +959,6 @@ section {
 
   #footer .footer-top .special {
     font-size: 16px;
-    font-weight: bold;
     color: #FE61A6;
     position: relative;
     padding-bottom: 12px;
@@ -843,10 +995,10 @@ a {
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 4rem;
+  grid-gap: 2rem;
   padding: 4rem;
   margin: 0 auto;
-  width: max-content;
+  /* width: max-content; */
   background: #F9F7F7;
 }
 
@@ -854,7 +1006,7 @@ a {
   --bg-filter-opacity: 0.5;
   --bs-card-border-width: 0px;
   --bs-card-bg: ;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), var(--bg-img);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.384) 0%, rgba(0, 0, 0, 0.6) 100%), var(--bg-img);
   height: 15em;
   width: 9em;
   font-size: 1.5em;
@@ -868,16 +1020,20 @@ a {
   position: relative;
   overflow: hidden;
   text-decoration: none;
-
+  text-align: center !important;
 }
 
 .card h1 {
-  margin-top: 1.9em;
-  font-size: 1.9em;
+  margin-top: 1.5em;
+  font-size: 63px;
   line-height: 1.2em;
-  text-align: left !important;
+  text-align: center !important;
 }
 
+.card p{
+  text-align: center;
+  font-size: 22px;
+}
 .card span {
   font-size: 0.75em;
   font-family: 'Poppins';
@@ -929,13 +1085,46 @@ a {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1285px) {
+/* @media screen and (max-width: 1285px) {
   .cards-wrapper {
     grid-template-columns: 1fr 1fr;
   }
+} */
+
+@media (min-width: 768px) and (max-width:1123px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+
+  .card {
+    --bg-filter-opacity: 0.5;
+    --bs-card-border-width: 0px;
+    --bs-card-bg: ;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.589375) 99.99%, rgba(0, 0, 0, 0.6) 100%), var(--bg-img);
+    height: 14em;
+    width: 13.5em;
+    font-size: 1.5em;
+
+  }
+
+  .card h1 {
+    margin-top: 1em;
+    font-size: 63px;
+    line-height: 1.2em;
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 22px;
+    font-family: 'Poppins';
+    text-align: center;
+  }
+
 }
 
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 767px) {
   .cards-wrapper {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
@@ -962,7 +1151,7 @@ a {
   .card p {
     font-size: 0.7em;
     font-family: 'Poppins';
-    text-align: left;
+    text-align: center;
   }
 
 }

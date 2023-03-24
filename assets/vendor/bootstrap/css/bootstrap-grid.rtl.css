@@ -111,7 +111,7 @@
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1080px;
   }
 }
 .row {
@@ -2706,7 +2706,7 @@
   }
   .ps-md-5 {
     padding-right: 3rem !important;
-  }
+  }flex-lg-row
 }
 @media (min-width: 992px) {
   .d-lg-inline {

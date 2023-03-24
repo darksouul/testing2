@@ -1988,7 +1988,7 @@ pre code {
     .container {
         width: 1170px;
     }
-}
+
 
 .container-fluid {
     padding-right: 15px;
@@ -2496,6 +2496,11 @@ pre code {
         margin-left: 0;
     }
 }
+/* @media (min-width: 1000px){
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+} */
 
 @media (min-width: 992px) {
 
@@ -2538,8 +2543,11 @@ pre code {
         width: 58.33333333%;
     }
 
-    .col-md-6 {
+    /* .col-md-6 {
         width: 50%;
+    } */
+    .col-md-13{
+        width: 0px;
     }
 
     .col-md-5 {
